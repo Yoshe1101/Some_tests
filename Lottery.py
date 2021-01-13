@@ -12,3 +12,18 @@ for i in range(6):
 print("Tu numero de loteria es el: ", loteria)
 
 
+# Better version 
+
+
+
+import random 
+
+lot_num = []
+
+while len(lot_num) < 6 :
+    aux = random.randint(1,42)
+    if aux not in lot_num:
+      lot_num.append(aux)
+    else:
+      continue
+print(sorted(lot_num))
